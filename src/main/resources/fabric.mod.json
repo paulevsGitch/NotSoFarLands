@@ -4,7 +4,7 @@
 	"version": "${version}",
 
 	"name": "NotSoFarLands",
-	"description": "Mod that increases maximum view distance",
+	"description": "Mod that allows Farlands to generate much closer",
 	"authors": [
 		"paulevs"
 	],
