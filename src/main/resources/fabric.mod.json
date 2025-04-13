@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "notsofarlands",
+	"version": "${version}",
+
+	"name": "NotSoFarLands",
+	"description": "Mod that increases maximum view distance",
+	"authors": [
+		"paulevs"
+	],
+	"contact": {
+		"homepage": "https://github.com/paulevsGitch/NotSoFarLands/releases",
+		"sources": "https://github.com/paulevsGitch/NotSoFarLands",
+		"issues": "https://github.com/paulevsGitch/NotSoFarLands/issues",
+		"discord": "https://discord.gg/qxcP8EjkUC"
+	},
+
+	"license": "LGPLv2.1",
+	"icon": "assets/notsofarlands/icon.png",
+
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"paulevs.notsofarlands.NotSoFarLands"
+		]
+	},
+	"mixins": [
+		"notsofarlands.mixins.json"
+	],
+
+	"depends": {
+		"minecraft": "1.0.0-beta.7.3"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "paulevs.notsofarlands.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"OverworldLevelSourceMixin",
+		"NetherLevelSourceMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
