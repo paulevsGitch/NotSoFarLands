@@ -34,7 +34,7 @@ public class NetherLevelSourceMixin {
 		}
 		else if (pos >= NotSoFarLands.NETHER_MAX_Z.getValue()) {
 			pos += 12550821;
-			args.set(1, pos);
+			args.set(3, pos);
 		}
 	}
 }
