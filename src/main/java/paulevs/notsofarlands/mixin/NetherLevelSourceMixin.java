@@ -17,7 +17,7 @@ public class NetherLevelSourceMixin {
 	private void notsofarlands_changeChunkPos(Args args) {
 		if (!NotSoFarLands.GEN_NETHER.getValue()) return;
 		
-		int pos = args.get(1);
+		int pos = args.get(1)/4;
 		if (pos <= NotSoFarLands.NETHER_MIN_X.getValue()) {
 			pos -= 12550821;
 			args.set(1, pos);
@@ -27,7 +27,7 @@ public class NetherLevelSourceMixin {
 			args.set(1, pos);
 		}
 		
-		pos = args.get(3);
+		pos = args.get(3)/4;
 		if (pos <= NotSoFarLands.NETHER_MIN_Z.getValue()) {
 			pos -= 12550821;
 			args.set(3, pos);
