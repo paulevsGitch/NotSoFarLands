@@ -34,7 +34,7 @@ public class OverworldLevelSourceMixin {
 		}
 		else if (pos >= NotSoFarLands.OVERWORLD_MAX_Z.getValue()) {
 			pos += 12550821;
-			args.set(1, pos);
+			args.set(3, pos);
 		}
 	}
 }
