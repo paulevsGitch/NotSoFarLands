@@ -9,6 +9,7 @@ import java.io.File;
 
 public class NotSoFarLands implements ModInitializer {
 	private static final Config CONFIG = new Config(new File(FabricLoader.getInstance().getConfigDir().toString(), "not_so_far_lands.cfg"));
+	public static final int WORLD_OFFSET = 12550821 >> 2;
 	
 	public static final ConfigEntry<Boolean> GEN_OVERWORLD = CONFIG.addEntry(
 		"generateInTheOverworld", true, "Should Farlands be generated in the Overworld", "Default value is true"
