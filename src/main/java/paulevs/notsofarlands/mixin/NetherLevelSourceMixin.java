@@ -18,23 +18,23 @@ public class NetherLevelSourceMixin {
 		if (!NotSoFarLands.GEN_NETHER.getValue()) return;
 		
 		int pos = args.get(1);
-		if (pos <= NotSoFarLands.NETHER_MIN_X.getValue()) {
+		if (pos <= (NotSoFarLands.NETHER_MIN_X.getValue()/4)) {
 			pos -= 12550821;
 			args.set(1, pos);
 		}
-		else if (pos >= NotSoFarLands.NETHER_MAX_X.getValue()) {
+		else if (pos >= (NotSoFarLands.NETHER_MAX_X.getValue()/4)) {
 			pos += 12550821;
 			args.set(1, pos);
 		}
 		
 		pos = args.get(3);
-		if (pos <= NotSoFarLands.NETHER_MIN_Z.getValue()) {
+		if (pos <= (NotSoFarLands.NETHER_MIN_Z.getValue()/4)) {
 			pos -= 12550821;
 			args.set(3, pos);
 		}
-		else if (pos >= NotSoFarLands.NETHER_MAX_Z.getValue()) {
+		else if (pos >= (NotSoFarLands.NETHER_MAX_Z.getValue()/4)) {
 			pos += 12550821;
-			args.set(1, pos);
+			args.set(3, pos);
 		}
 	}
 }
